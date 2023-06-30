@@ -1,0 +1,348 @@
+/*ANIMATIONS*/
+.animate {
+
+}
+
+.animate1 {
+
+}
+
+.animate-elem{
+    transition: all 1s ease;
+    /*transition-duration: 1s;*/
+}
+
+@keyframes scaleAnimation {
+    0% {
+      transform: translate(-50%, -50%) scale(0.8);
+        }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+  }
+
+  @keyframes scale2Animation {
+    0% {
+      transform: translate(-50%, -50%) scale(0);
+        }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+  }
+
+  @keyframes widthAnimation {
+    0% {
+      width: 0%;
+        }
+
+    100% {
+        width: 95%;
+    }
+  }
+
+  @keyframes heightAnimation {
+    0% {
+      height: 0%;
+        }
+
+    100% {
+        height: 100%;
+    }
+  }
+
+
+  @keyframes moveAnimation {
+    0% {
+      width: 0%;
+      height: 0%;
+      left: 50%;
+      top: 50%;
+        }
+
+    15% {
+        width: 100%;
+        height: 100%;
+        left: 0%;
+        top: 0%;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+        left: 0%;
+        top: 0%;
+    }
+
+
+  }
+
+.popup-box-ellipse {
+    animation: scaleAnimation 5s infinite;
+  }
+
+  #videobutton {
+    animation: scaleAnimation 4s infinite;
+  }
+
+.animate-delay-03{
+    transition: all 1s .3s ease;
+}
+
+.animate-delay-05{
+    transition: all 1s .5s ease;
+}
+
+.animate-delay-07{
+    transition: all 1s .7s ease;
+}
+
+.animate-delay-10{
+    transition: all 1s 1s ease;
+}
+
+.animate-delay-12{
+    transition: all 1s 1.2s ease;
+}
+
+.animate-delay-15{
+    transition: all 1s 1.5s ease;
+}
+
+.animate-delay-17{
+    transition: all 1s 1.7s ease;
+}
+
+.animate-delay-20{
+    transition: all 1s 2s ease;
+}
+
+.animate-delay-22{
+    transition: all 1s 2.2s ease;
+}
+
+.animate-delay-25{
+    transition: all 1s 2.5s ease;
+}
+
+.animate-delay-30{
+    transition: all 1s 3s ease;
+}
+
+.animate-delay-35{
+    transition: all 1s 3.5s ease;
+}
+
+.animate-delay-40{
+    transition: all 1s 4s ease;
+}
+
+.animate-delay-45{
+    transition: all 1s 4.5s ease;
+}
+
+.animate-delay-50{
+    transition: all 1s 5s ease;
+}
+
+.animate-delay-55{
+    transition: all 1s 5.5s ease;
+}
+
+.animate-delay-60{
+    transition: all 1s 6s ease;
+}
+
+.animate-delay-65{
+    transition: all 1s 6.5s ease;
+}
+
+.animate-delay-70{
+    transition: all 1s 7s ease;
+}
+
+
+.animate-duration-05{
+    transition-duration: .5s;
+}
+
+.animate-duration-10{
+    transition-duration: 1s;
+}
+
+.animate-duration-15{
+    transition-duration: 1.5s;
+}
+
+.animate-duration-20{
+    transition-duration: 2s;
+}
+
+.animate-duration-30{
+    transition-duration: 3s;
+}
+
+.animate-duration-40{
+    transition-duration: 4s;
+}
+
+.animate-duration-50{
+    transition-duration: 5s;
+}
+
+.animate-duration-60{
+    transition-duration: 6s;
+}
+
+.animate-duration-70{
+    transition-duration: 7s;
+}
+
+.animate-duration-80{
+    transition-duration: 8s;
+}
+
+.animate-duration-90{
+    transition-duration: 9s;
+}
+
+.animate-duration-100{
+    transition-duration: 10s;
+}
+
+.animate-fadeIn{
+    opacity: 0;
+}
+.animate.active .animate-fadeIn{
+    opacity:1;
+}
+
+.animate-fadeIn2{
+    opacity: 0;
+}
+.animate.active .animate-fadeIn2{
+    opacity:0.5;
+}
+
+.animate .animate-scale-from-small{
+    transform: translate(-50%, -50%) scale(0);
+}
+.animate.active .animate-scale-from-small{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.animate .animate-scale-from-small2{
+    transform: scale(0);
+}
+
+.animate.active .animate-scale-from-small2{
+    transform: scale(1);
+}
+
+.animate .animate-scale-from-big{
+    transform: scale(2);
+}
+.animate.active .animate-scale-from-big{
+    transform: scale(1);
+}
+
+.animate .animate-scale-from-big2{
+    transform: translate(-50%, -50%) scale(1.5);
+}
+.animate.active .animate-scale-from-big2{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.animate .animate-slideFromTop{
+    top:-200px;
+}
+.animate.active .animate-slideFromTop{
+    top:0;
+}
+
+.animate-slideFromBottom{
+    top:150px;
+}
+.animate.active .animate-slideFromBottom{
+    top:0;
+}
+
+.animate .animate-slideFromLeft{
+    left:-200px;
+}
+.animate.active .animate-slideFromLeft{
+    left:0;
+}
+
+.animate .animate-slideFromRight{
+    right:-100px;
+}
+.animate.active .animate-slideFromRight{
+    right:0;
+}
+
+
+@supports (-webkit-touch-callout: none) {
+    @media screen and (max-width: 768px) {
+
+    .animate-elem{
+        transition: all;
+        transition-duration: 0s;
+    }
+
+    .animate .animate-fadeIn{
+        opacity:1;
+    }
+
+    .animate .animate-slideFromTop{
+        top:0;
+    }
+
+    .animate .animate-slideFromBottom{
+        top:0;
+    }
+
+    .animate .animate-slideFromLeft{
+        left:0;
+    }
+
+    .animate .animate-slideFromRight{
+        right:0;
+    }
+
+    .animate .animate-scale-from-small{
+        transform: scale(1);
+    }
+
+    .animate .animate-scale-from-big{
+        transform: scale(1);
+    }
+
+    .animate .animate-scale-from-big2{
+        transform: scale(1);
+    }
+
+    .animate .animate-scale-from-small2{
+        transform: scale(1);
+    }
+
+    .animate-fadeIn2 {
+        opacity:1;
+    }
+    
+    .large-image .image-name, .large-image .twitter-icon, .large-image .linkedin-icon, .large-image .image-title {
+        opacity: 1;
+    }
+
+    .solar-button, .image-container.active, .blur, .particles-container, .large-image .image-name, .large-image .twitter-icon, .large-image .linkedin-icon, .large-image .image-title, #videobutton, .popup-box-ellipse {
+        animation: none !important;
+        transition: none !important;
+      }
+
+    }
+  }
